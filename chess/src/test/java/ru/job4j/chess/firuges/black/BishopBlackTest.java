@@ -7,14 +7,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 class BishopBlackTest {
 
     @Test
-    void WhenPositionC7() {
+    void whenPositionC7() {
         BishopBlack bishopBlack = new BishopBlack(Cell.C7);
         Cell expected = Cell.C7;
         assertThat(bishopBlack.position()).isEqualTo(expected);
     }
 
     @Test
-    void WhenCopyC7toC5() {
+    void whenCopyC7toC5() {
         BishopBlack bishopBlack = new BishopBlack(Cell.C7);
         Cell expected = Cell.C5;
         assertThat(bishopBlack.copy(Cell.C5).position()).isEqualTo(expected);
