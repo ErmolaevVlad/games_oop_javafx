@@ -42,5 +42,4 @@ public class LogicTest {
         });
         assertThat(exception.getMessage()).isEqualTo("Could not way by diagonal from C1 to H7");
     }
-
 }
